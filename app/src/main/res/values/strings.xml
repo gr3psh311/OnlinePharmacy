@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Online Pharmacy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_main">Online Pharmacy</string>
+
+
+    <string name="address">No Address Available!</string>
+    <string name="timing">No Time Available!</string>
+    <string name="phone">No Phone Number Available!</string>
+    <string name="caisse">No Convention Available!</string>
+    <string name="facebook">No Facebook Page Available!</string>
+    <string name="localisation">No Localisation Available!</string>
+
+    <string name="ville">No City Available For Now!</string>
+</resources>

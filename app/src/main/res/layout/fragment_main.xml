@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MainFragment" android:id="@+id/main_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:text="Register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/register"
+                app:layout_constraintEnd_toStartOf="@+id/login" android:layout_marginEnd="20dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/title" android:layout_marginTop="100dp"/>
+        <Button
+                android:text="Login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="40dp"
+                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/title"
+                app:layout_constraintStart_toEndOf="@+id/register" android:layout_marginStart="20dp"/>
+        <Button
+                android:text="List Pharmacies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/browse"
+                android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/login"
+                android:layout_marginEnd="40dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="40dp" app:layout_constraintStart_toStartOf="parent"/>
+        <Button
+                android:text="Nearest Pharmacies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/nearest"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="40dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/browse"
+        />
+        <Button
+                android:text="Make An Order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/order"
+                android:layout_marginEnd="40dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="40dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/nearest"/>
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:theme="?attr/actionBarTheme"
+                android:minHeight="?attr/actionBarSize"
+                android:id="@+id/toolbar" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+                android:text="Online Pharmacy "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/title" app:layout_constraintEnd_toEndOf="@+id/toolbar"
+                app:layout_constraintStart_toStartOf="@+id/toolbar"
+                app:layout_constraintTop_toTopOf="@+id/toolbar" app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+                android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:textAlignment="center"
+                android:textSize="15dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
