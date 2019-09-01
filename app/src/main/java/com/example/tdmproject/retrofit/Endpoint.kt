@@ -18,4 +18,7 @@ interface Endpoint {
     @POST("adduser")
     fun adduser(@Body user: User):Call<String>
 
+    @GET("authuser/{phone}/{password}")
+    fun authuser(@Path("phone") phone: String, @Path("password") password: String):Call<User>
+
 }

@@ -24,4 +24,13 @@
 
     <string name="btn_signup">Sign UP</string>
     <string name="btn_signin">Sign IN</string>
+
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="ListPharmacies">List Pharmacies</string>
+    <string name="NearestPharmacies">Nearest Pharmacies</string>
+    <string name="MakeAnOrder">Make An Order</string>
+    <string name="OnlinePharmacy">Online Pharmacy</string>
+    <string name="connectedas">Connected as:  %1$s </string>
+
 </resources>

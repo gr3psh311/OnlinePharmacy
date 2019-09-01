@@ -15,9 +15,6 @@ import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-//import com.twilio.Twilio
-//import com.twilio.rest.api.v2010.account.Message
-//import com.twilio.type.PhoneNumber
 
 
 
