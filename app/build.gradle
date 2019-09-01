@@ -7,6 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
+
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.tdmproject"
@@ -45,4 +46,6 @@ dependencies {
     implementation 'androidx.room:room-runtime:2.1.0'
     kapt 'androidx.room:room-compiler:2.1.0'
     testImplementation 'androidx.room:room-testing:2.1.0'
+
+    //implementation group: "com.twilio.sdk", name: "twilio", version: "7.17.1"
 }

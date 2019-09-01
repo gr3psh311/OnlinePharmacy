@@ -14,4 +14,14 @@
     <string name="localisation">No Localisation Available!</string>
 
     <string name="ville">No City Available For Now!</string>
+
+    <string name="input_nss">NSS code!</string>
+    <string name="input_name">Name!</string>
+    <string name="input_firstname">First Name!</string>
+    <string name="input_address">Address!</string>
+    <string name="input_phone_num">Phone Number!</string>
+    <string name="input_password">Password!</string>
+
+    <string name="btn_signup">Sign UP</string>
+    <string name="btn_signin">Sign IN</string>
 </resources>

@@ -12,7 +12,9 @@
     <fragment android:id="@+id/login_fragment" android:name="com.example.tdmproject.LoginFragment"
               android:label="Login" tools:layout="@layout/fragment_login"/>
     <fragment android:id="@+id/register_fragment" android:name="com.example.tdmproject.RegisterFragment"
-              android:label="Register" tools:layout="@layout/fragment_register"/>
+              android:label="Register" tools:layout="@layout/fragment_register">
+        <action android:id="@+id/action_register_fragment_to_login_fragment" app:destination="@id/login_fragment"/>
+    </fragment>
     <fragment android:id="@+id/browseFragment" android:name="com.example.tdmproject.browseFragment"
               android:label="List Pharmacies" tools:layout="@layout/fragment_browse">
         <action android:id="@+id/action_browseFragment_to_detailFragment" app:destination="@id/detailFragment"/>
