@@ -31,6 +31,15 @@
     <string name="NearestPharmacies">Nearest Pharmacies</string>
     <string name="MakeAnOrder">Make An Order</string>
     <string name="OnlinePharmacy">Online Pharmacy</string>
-    <string name="connectedas">Connected as:  %1$s </string>
+    <string name="connectedas">Connected as: %1$s</string>
+
+    <string name="upload">upload</string>
+    <string name="pickImage">Pick Image</string>
+    <string name="preview">Image uploaded</string>
+
+    <string name="status0">waiting</string>
+    <string name="status1">ready</string>
+
+    <string name="viewCommands">View My Commands</string>
 
 </resources>

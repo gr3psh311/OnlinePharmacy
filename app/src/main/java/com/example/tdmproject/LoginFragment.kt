@@ -68,6 +68,8 @@ class LoginFragment : Fragment() {
                                 pref.edit {
                                     putBoolean("connected", true)
                                     putString("info",""+ userDetail.name +" "+ userDetail.firstname +" ")
+                                    putInt("nss",userDetail.nss)
+                                    Log.d("youcef","nss added: "+userDetail.nss)
                                 }
                                 Log.d("youcef","Pref (connected): "+ pref.getBoolean("connected",false))
                                 Log.d("youcef","Pref (info): "+ pref.getString("info","none"))

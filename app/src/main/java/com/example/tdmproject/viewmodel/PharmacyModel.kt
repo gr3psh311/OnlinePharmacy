@@ -5,22 +5,16 @@ import android.app.Activity
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import android.view.View
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.example.tdmproject.entity.Pharmacy
 import com.example.tdmproject.adapter.PharmacyAdapter
-import com.example.tdmproject.R
 import com.example.tdmproject.retrofit.RetrofitService
-import com.example.tdmproject.baseUrl
 import com.example.tdmproject.roomdatabase.RoomService
 import kotlinx.android.synthetic.main.fragment_browse.*
 import kotlinx.android.synthetic.main.fragment_detail.*
-import kotlinx.android.synthetic.main.fragment_main.*
 import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import kotlin.math.log
 
 
 class PharmacyModel:ViewModel() {
@@ -82,7 +76,7 @@ class PharmacyModel:ViewModel() {
 
     fun loadDetail(act:Activity,idPharmacy:Int) {
 
-        act.progressBar2.visibility = View.VISIBLE
+        act.progressBar3.visibility = View.VISIBLE
         // load pharmacy detail from SQLite DB
         this.pharmacy = RoomService.appDataBase.getPharmacyDao().getPharmacyById(idPharmacy)
         //this.pharmacy = RoomService.appDataBase.getPharmacyDao().getPharmacyById(1)
@@ -91,7 +85,7 @@ class PharmacyModel:ViewModel() {
             loadDetailFromRemote(act,idPharmacy)
         }
         else {
-            act.progressBar2.visibility = View.GONE
+            act.progressBar3.visibility = View.GONE
             displayDetail(act, this.pharmacy!!)
         }
 
@@ -102,7 +96,7 @@ class PharmacyModel:ViewModel() {
         val call = RetrofitService.endpoint.getDetailPharmacy(idPharmacy)
         call.enqueue(object : Callback<Pharmacy> {
             override fun onResponse(call: Call<Pharmacy>?, response: Response<Pharmacy>?) {
-                act.progressBar2.visibility = View.GONE
+                act.progressBar3.visibility = View.GONE
                 if(response?.isSuccessful!!) {
                     var pharmacyDetail = response?.body()
                     pharmacyDetail = pharmacy!!.copy(
@@ -130,7 +124,7 @@ class PharmacyModel:ViewModel() {
             }
 
             override fun onFailure(call: Call<Pharmacy>?, t: Throwable?) {
-                act.progressBar2.visibility = View.GONE
+                act.progressBar3.visibility = View.GONE
                 act.toast("Une erreur s'est produite")
 
             }

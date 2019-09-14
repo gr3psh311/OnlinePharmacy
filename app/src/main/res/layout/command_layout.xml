@@ -9,7 +9,7 @@
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/list_ville"
+            android:id="@+id/list_date"
             android:layout_marginTop="30dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -22,12 +22,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/list_ville"
+            app:layout_constraintTop_toBottomOf="@+id/list_date"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"
-            android:text="@string/address"
-            android:layout_marginBottom="30dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:id="@+id/list_address"/>
+            android:id="@+id/list_address2" android:text="@string/address"
+    />
+    <TextView
+            android:text="@string/status0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/list_status"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/list_address2" android:layout_marginTop="8dp"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

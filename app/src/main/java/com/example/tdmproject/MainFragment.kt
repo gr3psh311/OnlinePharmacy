@@ -60,6 +60,16 @@ class MainFragment : Fragment() {
             //            Toast.makeText( activity,"heey login",Toast.LENGTH_SHORT).show()
         }
 
+        view_commands.setOnClickListener { view ->
+
+                        view.findNavController().navigate(R.id.action_main_fragment_to_browseCommandsFragment)
+        }
+
+
+        nearest.setOnClickListener {
+            view?.findNavController()?.navigate(R.id.action_main_fragment_to_nearestFragment)
+        }
+
 
         }
 

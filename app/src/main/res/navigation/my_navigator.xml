@@ -8,6 +8,9 @@
         <action android:id="@+id/action_main_fragment_to_login_fragment" app:destination="@id/login_fragment"/>
         <action android:id="@+id/action_main_fragment_to_register_fragment" app:destination="@id/register_fragment"/>
         <action android:id="@+id/action_main_fragment_to_browseFragment" app:destination="@id/browseFragment"/>
+        <action android:id="@+id/action_main_fragment_to_browseCommandsFragment"
+                app:destination="@id/browseCommandsFragment"/>
+        <action android:id="@+id/action_main_fragment_to_nearestFragment" app:destination="@id/nearestFragment"/>
     </fragment>
     <fragment android:id="@+id/login_fragment" android:name="com.example.tdmproject.LoginFragment"
               android:label="Login" tools:layout="@layout/fragment_login"/>
@@ -20,5 +23,13 @@
         <action android:id="@+id/action_browseFragment_to_detailFragment" app:destination="@id/detailFragment"/>
     </fragment>
     <fragment android:id="@+id/detailFragment" android:name="com.example.tdmproject.detailFragment"
-              android:label="Pharmacy Detail" tools:layout="@layout/fragment_detail"/>
+              android:label="Pharmacy Detail" tools:layout="@layout/fragment_detail">
+        <action android:id="@+id/action_detailFragment_to_commandFragment" app:destination="@id/commandFragment"/>
+    </fragment>
+    <fragment android:id="@+id/commandFragment" android:name="com.example.tdmproject.CommandFragment"
+              android:label="Make An Order" tools:layout="@layout/fragment_command"/>
+    <fragment android:id="@+id/browseCommandsFragment" android:name="com.example.tdmproject.browseCommandsFragment"
+              android:label="My Commands" tools:layout="@layout/command_browse"/>
+    <fragment android:id="@+id/nearestFragment" android:name="com.example.tdmproject.NearestFragment"
+              android:label="fragment_nearest" tools:layout="@layout/fragment_nearest"/>
 </navigation>
